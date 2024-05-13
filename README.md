@@ -70,6 +70,105 @@ Table 1
 | Yogurt       | 420         | 42.0 |
 | Chocolate    | 421         | 42.1 |
 
+We will be applying Apriori alogorithm in the above mentioned data to find out the Support, Confidence and Lift of all the 15 items throughout 1000 transactions. According to Apriori algorithm, the subset of non-empty itemsets are also frequent. This would mean that if [Bread, Apple]  are bought frequently, then individually Apple and Bread are also bought frequently. 
+
+•	Support – This is used to measure the frequency of an itemset from the data.
+Support(A) = (Transactions with (A))/ Total Transactions
+•	Confidence – It is used to measure the reliability of an association rule, that if X is purchased, Y will also be purchased.
+Confidence (X,Y) = ( Transactions having both X and Y)/(Transactions of X)
+•	Lift – It evaluates the extent to which the presence of item X influences that of Y.
+Lift (X>Y) increase in the sale of  Y when X is sold.
+Lift (Y>X) increase in the sale of X when Y is sold.
+Lift (XY) = Confidence(X,Y)/Support(Y)
+
+                  Let’s consider minimum support = 11%
+                                                                       = minimum_support * itemset_count
+                                                                       = (11/100) * 1000 = 110 
+
+Commands used in Jupyter notebook:
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from mlxtend.preprocessing import TransactionEncoder
+from mlxtend.frequent_patterns import apriori, association_rules
+from pandas.plotting import parallel_coordinates
+import warnings
+warnings.filterwarnings('ignore')
+
+df = pd.read_csv('/Users/pallabibarori/Desktop/MBA.csv')
+
+print(df)
+
+Order ID  Apple  Bread  Butter  Cheese   Corn   Dill   Eggs  Ice cream  \
+0     OD1001  False   True    True   False  False   True  False       True   
+1     OD1002   True  False    True   False  False   True   True       True   
+2     OD1003  False   True   False   False  False   True   True       True   
+3     OD1004   True  False   False    True   True  False  False      False   
+4     OD1005  False  False    True   False   True  False  False      False   
+..       ...    ...    ...     ...     ...    ...    ...    ...        ...   
+995   OD1996   True  False   False   False  False  False   True       True   
+996   OD1997   True  False    True    True  False   True   True       True   
+997   OD1998  False   True   False    True  False   True   True       True   
+998   OD1999  False  False   False   False  False  False  False      False   
+999   OD2000   True   True    True   False  False  False   True      False   
+
+     Kidney Beans   Milk  Nutmeg  Onion  Sugar  Yogurt  chocolate Oredr Date  \
+0            True   True   False  False  False   False      False   02/01/15   
+1            True   True   False   True   True    True      False   03/01/15   
+2           False  False   False  False   True   False      False   06/01/15   
+3           False   True    True   True  False    True       True   06/01/15   
+4            True  False   False   True  False   False      False   06/01/15   
+..            ...    ...     ...    ...    ...     ...        ...        ...   
+995         False   True    True  False  False    True       True  9-29-2017   
+996          True  False   False  False   True   False       True  9-29-2018   
+997          True   True    True   True   True    True      False  9-29-2018   
+998         False  False    True  False   True   False      False  9-29-2018   
+999          True   True   False  False  False   False      False  9-29-2018   
+
+            City   Region  
+0         Trichy  Central  
+1          Salem     West  
+2     Coimbatore  Central  
+3    Kanyakumari  Central  
+4     Perambalur  Central  
+..           ...      ...  
+995      Tenkasi     East  
+996  Krishnagiri  Central  
+997   Perambalur  Central  
+998        Theni  Central  
+999   Perambalur  Central  
+
+[1000 rows x 19 columns]
+
+df.drop(df.columns[0],axis=1,inplace=True)
+df.shape
+(1000, 18)
+
+df.mean()
+Apple           0.384
+Bread           0.385
+Butter          0.421
+Cheese          0.404
+Corn            0.407
+Dill            0.398
+Eggs            0.385
+Ice cream       0.410
+Kidney Beans    0.409
+Milk            0.406
+Nutmeg          0.401
+Onion           0.403
+Sugar           0.409
+Yogurt          0.420
+chocolate       0.421
+dtype: float64
+
+After filtering the rules with Confidence >= 50, we get 17 rules.
+Filtered Table
+![image](https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/d74ce1d9-e145-4030-872c-b5e128635db9)
+![image](https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/d74ce1d9-e145-4030-872c-b5e128635db9)
+
+
 
 ---
 
