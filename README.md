@@ -51,8 +51,24 @@ For this project I will be using Association rule mining and apriori algorithm.
 Apriori Algorithm – This gives the frequent itemset
 Association rule mining – This creates rule that if one item is bought what are the chances of other items being bought with it as well.
 
-
-
+Table 1 
+| Item         | Total count | Mean |
+|--------------|-------------|------|
+| Apple        | 384         | 38.4 |
+| Bread        | 385         | 38.5 |
+| Butter       | 421         | 42.1 |
+| Cheese       | 404         | 40.4 |
+| Corn         | 407         | 40.7 |
+| Dill         | 398         | 39.8 |
+| Eggs         | 385         | 38.5 |
+| Ice-cream    | 410         | 41.0 |
+| Kidney beans | 409         | 40.9 |
+| Milk         | 406         | 40.6 |
+| Nutmeg       | 40.1        | 40.1 |
+| Onion        | 403         | 40.3 |
+| Sugar        | 409         | 40.9 |
+| Yogurt       | 420         | 42.0 |
+| Chocolate    | 421         | 42.1 |
 
 
 ---
