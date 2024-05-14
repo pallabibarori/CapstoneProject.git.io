@@ -186,6 +186,7 @@ Filtered Table
 | Bread         | Yogurt            | 38.5                | 42                  | 19.3    | 50.12      | 1.19 |
 | Dill          | Chocolate         | 39.8                | 42.1                | 19.9    | 50         | 1.19 |
 
+<img width="523" alt="image" src="https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/b03da207-fe21-4f67-bb04-c5e82bb23521">
 
 Link to Tableau: https://public.tableau.com/views/MarketBasket_ConfidenceVsSupport/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
 
@@ -224,6 +225,7 @@ As North has the least sales, we can use this data to further find the root caus
 
 The above-mentioned data also helps us to identify the best performing region/store as the eastern store. 
 
+<img width="425" alt="image" src="https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/f5232c41-161d-4772-8813-9d5058545e40">
 
 Link to tableau :  https://public.tableau.com/views/Year-wiseSalesData/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
@@ -239,10 +241,18 @@ Link to tableau :  https://public.tableau.com/views/Year-wiseSalesData/Dashboard
    
 This data help us to identify ‘Chocolates’ as the most commonly bought items throughout the years as out of four years, it is present in top 3 for three years. With this data we can place similar products in and around ‘Chocolates’ and within majority customer’s reach.
 
+<img width="427" alt="image" src="https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/b8cdccc5-6942-4121-b36d-e08f3cf6ea3a">
+<img width="427" alt="image" src="https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/6829e56b-5411-482d-8f3d-d7ce00f662ed">
+
+
+
 -	Animal Based products consists Milk, Butter etc
 -	Plant Based products consists Apple, Corn etc
 -	Sweets consists Chocolate, Ice-cream etc
 -	Other consists Nutmeg
+
+<img width="523" alt="image" src="https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/5053ce00-276b-4874-83a8-97f1ab1bcca0">
+
 
   Clusters of Confidence VS Support
 Link to Tableau Public: https://public.tableau.com/views/MarketBasket_ConfidenceVsSupport/Dashboard2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
