@@ -1,4 +1,4 @@
-# CAPSTONE PROJECT ON
+![image](https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/1a77e179-ff01-409b-ae97-7c0f82944a3d)![image](https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/1a77e179-ff01-409b-ae97-7c0f82944a3d)# CAPSTONE PROJECT ON
 
 ## 🛒 “MARKET BASKET ANALYSIS TO UNDERSTAND THE INVENTORY BETTER” 📊
 
@@ -238,6 +238,15 @@ Link to tableau :  https://public.tableau.com/views/Year-wiseSalesData/Dashboard
  - 2018: Nutmeg (126), Kidney beans(124), Chocolate (124)
    
 This data help us to identify ‘Chocolates’ as the most commonly bought items throughout the years as out of four years, it is present in top 3 for three years. With this data we can place similar products in and around ‘Chocolates’ and within majority customer’s reach.
+
+-	Animal Based products consists Milk, Butter etc
+-	Plant Based products consists Apple, Corn etc
+-	Sweets consists Chocolate, Ice-cream etc
+-	Other consists Nutmeg
+
+  Clusters of Confidence VS Support
+Link to Tableau Public: https://public.tableau.com/views/MarketBasket_ConfidenceVsSupport/Dashboard2?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
 
 
 
