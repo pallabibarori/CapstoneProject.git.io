@@ -165,8 +165,79 @@ dtype: float64
 
 After filtering the rules with Confidence >= 50, we get 17 rules.
 Filtered Table
-![image](https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/d74ce1d9-e145-4030-872c-b5e128635db9)
-![image](https://github.com/pallabibarori/CapstoneProject.git.io/assets/95372576/d74ce1d9-e145-4030-872c-b5e128635db9)
+
+| Antecedents   | Consequents        | Antecedents Support | Consequents Support | Support | Confidence | Lift |
+|---------------|--------------------|---------------------|---------------------|---------|------------|------|
+| Dill          | Milk, Chocolate   | 39.8                | 21.1                | 11.4    | 60         | 2.84 |
+| Milk          | Dill, Chocolate   | 40.6                | 19.9                | 11.4    | 60         | 3.02 |
+| Dill          | Chocolate, Milk   | 39.8                | 21.1                | 11.4    | 57.28      | 2.71 |
+| Chocolate     | Dill, Milk        | 42.1                | 19                  | 11.4    | 57.28      | 3.01 |
+| Ice-cream     | Kidney beans, Butter | 41                | 20.3                | 11      | 56.12      | 2.76 |
+| Kidney beans  | Ice-cream, Butter | 40.9                | 20.7                | 11      | 56.12      | 2.71 |
+| Butter        | Kidney beans, Ice-cream | 42.1          | 19.6                | 11      | 54.18      | 2.76 |
+| Kidney beans  | Butter, Ice-cream | 40.9                | 20.7                | 11      | 54.18      | 2.62 |
+| Chocolate     | Milk, Dill        | 42.1                | 19                  | 11.4    | 54.02      | 2.84 |
+| Butter        | Ice-cream, Kidney beans | 42.1          | 19.6                | 11      | 53.14      | 2.71 |
+| Ice-cream     | Butter, Kidney beans | 41                | 20.3                | 11      | 53.14      | 2.62 |
+| Milk          | Chocolate         | 40.6                | 42.1                | 21.1    | 51.97      | 1.23 |
+| Chocolate     | Milk              | 42.1                | 40.6                | 21.1    | 51.58      | 1.27 |
+| Milk          | Chocolate, Dill   | 40.6                | 19.9                | 11.4    | 51.58      | 2.59 |
+| Ice-cream     | Butter            | 41                  | 42.1                | 20.7    | 50.48      | 1.20 |
+| Bread         | Yogurt            | 38.5                | 42                  | 19.3    | 50.12      | 1.19 |
+| Dill          | Chocolate         | 39.8                | 42.1                | 19.9    | 50         | 1.19 |
+
+
+Link to Tableau: https://public.tableau.com/views/MarketBasket_ConfidenceVsSupport/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link 
+
+## We can infer the following data:
+ Products sold in Central: 1542
+  - Maximum product sold in Central: Butter
+  - Minimum product sold in Central: Milk
+
+- Products sold in East: 1904
+  - Maximum product sold in East: Yogurt
+  - Minimum product sold in East: Apple, Sugar
+
+- Products sold in North: 7
+  - Maximum product sold in North: Bread, Chocolate, Corn, Dill, Ice cream, Sugar, Yogurt
+  - Minimum product sold in North: Apple, Butter, Cheese, Eggs, Kidney beans, Milk, Nutmeg, Onion
+
+- Products sold in West: 1762
+  - Maximum product sold in West: Kidney Beans
+  - Minimum product sold in West: Bread
+
+- Products sold in South: 848
+  - Maximum product sold in South: Milk, Sugar
+  - Minimum product sold in South: Eggs
+
+This data helps us to identify that most and least commonly bought items vary from region to region and we cannot rely on any specific region to plan the inventory.
+
+As North has the least sales, we can use this data to further find the root cause of it. We can analyze customer centric data and geo-demographic data of that region to understand it better. Incase of an online store, we can study the patterns of views on the pages using SEO and other Visualization tools. Depending on the data, the retailer can decide on how to improve their sales in North region. Currently we don’t have that data with us and hence cannot proceed with further deep dives.
+
+- Maximum number of products are sold in Eastern Store and the minimum number of products are sold in Northern Store.
+- Butter, Chocolate, Yogurt are the top 3 Best-selling products.
+- Top Selling product: Butter, Cheese
+- Least Selling product: Apple
+- Unique dates: 440
+- Highest Selling year: 2017 with 132 unique Sale days.
+- Lowest Selling year: 2016 with 85 unique sale days.
+
+The above-mentioned data also helps us to identify the best performing region/store as the eastern store. 
+
+
+Link to tableau :  https://public.tableau.com/views/Year-wiseSalesData/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
+
+-	2015 has 97 Unique Sale days, with Nutmeg being sold the least at 84 and Yogurt and Chocolate being sold the most at 97.
+-	2016 has 85 Unique Sale days, with Dill being sold the least at 65 and Sugar and Corn being sold the most at 85.
+-	2017 has 132 Unique Sale days, with Eggs being sold the least at 101 and Dill being sold the most at 132.
+-	2018 has 126 Unique Sale says, with Eggs being sold the least at 106 and Nutmeg being sold the most at 126.
+-	Top 3 products sold over the years:
+ - 2015: Yogurt(87), Chocolate(97), Ice-cream(96), Eggs(96)
+ - 2016: Sugar(85), Corn(85), Butter(84)
+ - 2017: Dill(132), Chocolate(131), Milk (127)
+ - 2018: Nutmeg (126), Kidney beans(124), Chocolate (124)
+   
+This data help us to identify ‘Chocolates’ as the most commonly bought items throughout the years as out of four years, it is present in top 3 for three years. With this data we can place similar products in and around ‘Chocolates’ and within majority customer’s reach.
 
 
 
