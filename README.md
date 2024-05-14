@@ -126,7 +126,7 @@ Order ID  Apple  Bread  Butter  Cheese   Corn   Dill   Eggs  Ice cream  \
 998         False  False    True  False   True   False      False  9-29-2018   
 999          True   True   False  False  False   False      False  9-29-2018   
 
-            City   Region  
+  City   Region  
 0         Trichy  Central  
 1          Salem     West  
 2     Coimbatore  Central  
